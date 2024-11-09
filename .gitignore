@@ -37,3 +37,7 @@ yarn-error.*
 # environment
 .env
 .env.*
+
+# lockfiles
+package-lock.json
+yarn.lock
