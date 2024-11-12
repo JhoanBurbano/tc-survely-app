@@ -4,7 +4,7 @@ import { EXPO_CONSTANTS } from '../utils/config';
 const api = axios.create({
   baseURL: EXPO_CONSTANTS.API_URL,
   headers: {
-    Authorization: EXPO_CONSTANTS.AUTH_TOKEN,
+    authorization: `Bearer ${EXPO_CONSTANTS.AUTH_TOKEN}`,
   },
 });
 
