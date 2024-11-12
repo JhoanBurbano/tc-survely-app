@@ -34,7 +34,7 @@ Está optimizada para producción mediante Expo Application Services (EAS).
 <img src="assets/screens.png" alt="screens" />
 </div>
 
-[Suverly_Flow](https://xd.adobe.com/view/7257b328-5a3b-4ae8-92e0-8c24f5e99a4f-2704/?fullscreen&hints=off)
+[Survely_Flow](https://xd.adobe.com/view/7257b328-5a3b-4ae8-92e0-8c24f5e99a4f-2704/?fullscreen&hints=off)
 
 ## Características
 
@@ -64,7 +64,7 @@ Sigue los siguientes pasos para clonar y configurar el proyecto en tu máquina l
 1. **Clona el Repositorio**:
 
    ```bash
-   git clone https://github.com/usuario/tc-survely-app.git
+   git clone https://github.com/JhoanBurbano/tc-survely-app.git
    cd tc-survely-app
    ```
 
