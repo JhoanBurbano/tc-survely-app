@@ -24,12 +24,14 @@ const FooterSurvey: React.FC<FooterSurveyProps> = ({
       entering={SlideInDown.duration(500).delay(400)}
       exiting={SlideOutDown.duration(500).delay(400)}
       style={[tw`p-4 relative overflow-hidden rounded-t-3xl mx-4 bg-gray-900`]}
+      testID={'footer'}
     >
       <CustomButton
         text="Finalizar"
         onPress={handleSubmit}
         disabled={!candSendForm}
         ref={SendButtonRef}
+        testID={'send-button'}
       />
       <CustomButton
         text="Reset Answers"
@@ -38,6 +40,7 @@ const FooterSurvey: React.FC<FooterSurveyProps> = ({
         textStyles={{ color: colorsStyle.WHITE }}
         ref={ResetButtonRef}
         type="text"
+        testID={'reset-button'}
       />
     </Animated.View>
   );

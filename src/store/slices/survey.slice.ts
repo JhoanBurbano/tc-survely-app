@@ -24,15 +24,11 @@ const surveySlice = createSlice({
     },
   },
   extraReducers(builder) {
-    builder
-      .addCase(GetSurveyQuestions.fulfilled, (state, action) => {
-        state.questions = action.payload;
-        if (state.answers?.length > 0) return;
-        state.answers = Array(action.payload.data.length).fill('');
-      })
-      .addCase(SendSurveyAnswers.fulfilled, (_, action) => {
-        console.log('Answers sent', action.payload);
-      });
+    builder.addCase(GetSurveyQuestions.fulfilled, (state, action) => {
+      state.questions = action.payload;
+      if (state.answers?.length > 0) return;
+      state.answers = Array(action.payload.data.length).fill('');
+    });
   },
 });
 

@@ -11,9 +11,10 @@ const FinishCard = () => {
       style={tw`gap-6 max-w-[370px] items-center bg-white rounded-3xl p-4 shadow-xl h-80 justify-center`}
       entering={SlideInRight.duration(500)}
       exiting={SlideOutLeft.duration(500)}
+      testID={'finish-card'}
     >
       <Text
-        style={tw`text-black text-2xl font-bold text-center bg-blue-900 p-4 rounded-3xl text-white`}
+        style={tw`text-black text-2xl font-bold text-center bg-gray-900 p-4 rounded-3xl text-white`}
       >
         Finalizado
       </Text>

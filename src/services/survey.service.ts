@@ -1,6 +1,5 @@
 import axios from './axios.instance';
 export const getQuestions = async () => {
-  console.log('axios questions');
   return await axios.get('/questions');
 };
 

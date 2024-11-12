@@ -47,11 +47,14 @@ const CompletionScreen = () => {
 
   return (
     <View style={tw`flex-1 justify-between items-center relative py-16`}>
-      <View style={tw`absolute top-0 left-0 right-0 bottom-0`}>
+      <View
+        style={tw`absolute top-0 left-0 right-0 bottom-0`}
+        testID="background-squares"
+      >
         <BackgroundSquares />
       </View>
       <View style={tw`items-center gap-2`}>
-        <Logo />
+        <Logo testID="logo" />
         <CustomText style={tw`text-white text-xl font-bold`}>
           Survely
         </CustomText>
@@ -71,6 +74,7 @@ const CompletionScreen = () => {
             style={tw`gap-4 w-full items-center bg-white rounded-lg p-4`}
             entering={SlideInRight.duration(500)}
             exiting={SlideOutDown.duration(500)}
+            testID="refill-card"
           >
             <View
               style={tw`flex-row justify-between items-center min-h-40 bg-gray-900 rounded-lg p-8`}
@@ -102,7 +106,7 @@ const CompletionScreen = () => {
           </Animated.View>
         )}
       </View>
-      <View>
+      <View testID="footer-logo">
         <LogoTeamCore color={colorsStyle.WHITE} />
       </View>
     </View>

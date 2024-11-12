@@ -49,6 +49,7 @@ const CustomButton = forwardRef<CustomButtonRef, CustomButtonProps>(
       textStyles,
       showLoading = true,
       type = 'filled',
+      testID,
     },
     ref
   ) => {
@@ -119,7 +120,11 @@ const CustomButton = forwardRef<CustomButtonRef, CustomButtonProps>(
 
     return (
       <TouchableWithoutFeedback onPress={__handleOnPress} onPressIn={onPressIn}>
-        <Animated.View style={ButtonStyles}>
+        <Animated.View
+          style={ButtonStyles}
+          testID={testID}
+          data-loading={isLoading}
+        >
           {type === 'outlined' ? (
             <>
               <Svg height="52" width="300">

@@ -4,11 +4,12 @@ import tw from 'twrnc';
 import colorsStyle from '../../styles/colors.style';
 import Animated, { FadeIn, FadeOut, ZoomOut } from 'react-native-reanimated';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { WithTestProps } from '../../types/test.types';
 
 const Pressable = Animated.createAnimatedComponent(TouchableWithoutFeedback);
 const Icon = Animated.createAnimatedComponent(Feather);
 
-interface IndexIndicatorProps {
+interface IndexIndicatorProps extends WithTestProps {
   isCurrent: boolean;
   isCompleted: boolean;
   onPress: () => void;
@@ -17,6 +18,7 @@ const IndexIndicator: React.FC<IndexIndicatorProps> = ({
   isCurrent,
   isCompleted,
   onPress,
+  testID,
 }) => {
   const indicatorStyles = useMemo(() => {
     const classes = [
@@ -46,6 +48,8 @@ const IndexIndicator: React.FC<IndexIndicatorProps> = ({
       style={[indicatorStyles]}
       entering={ZoomOut.duration(500)}
       onPress={onPress}
+      testID={testID}
+      data-current={isCurrent}
     >
       {icon && (
         <Icon

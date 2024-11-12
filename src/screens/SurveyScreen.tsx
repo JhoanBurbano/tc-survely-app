@@ -66,6 +66,7 @@ const SurveyScreen = () => {
         <Animated.View
           style={tw`flex-row gap-[2px]`}
           entering={FadeIn.duration(500)}
+          testID={'header-section'}
         >
           <CustomText
             style={tw`text-2xl font-bold text-blue-900`}
@@ -198,6 +199,7 @@ const SurveyScreen = () => {
             isCurrent={index === currentIndex}
             isCompleted={answers[index]?.length > 0}
             onPress={() => setCurrentIndex(index)}
+            testID={`indicator-${index}`}
           />
         ))}
       </View>
