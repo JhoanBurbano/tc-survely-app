@@ -1,0 +1,61 @@
+# Copy everything from your .gitignore file here
+
+# Additional ignores specific to EAS builds
+
+# Ignore native folders (if you are using EAS Build)
+/android
+/ios
+
+# Ignore test coverage reports
+/coverage
+
+# Ignore local environment files
+.env
+
+# Ignore lockfiles
+package-lock.json
+yarn.lock
+
+# Ignore build artifacts
+/build
+/dist
+/web-build
+/artifacts
+
+# Ignore Metro cache
+.metro-cache
+
+# Ignore debug files
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore TypeScript build info
+*.tsbuildinfo
+
+# Ignore Expo
+.expo
+
+# Ignore local environment files
+.env.local
+
+# Ignore mobile provisioning files
+*.mobileprovision
+
+# Ignore Metro health check files
+.metro-health-check*
+
+# Ignore native files
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+
+# Ignore dependencies
+node_modules
+
+# Ignore
