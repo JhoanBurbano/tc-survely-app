@@ -1,14 +1,20 @@
 export interface QuestionAnswer {
-  question_id: string;
   answer_id: string;
+  answer: string;
 }
 
 export interface SurveyState {
-  responses: QuestionAnswer[];
+  answers: string[];
+  questions: QuestionResponse | null;
 }
 
 export interface Question {
-  id: string;
-  text: string;
-  options: { id: string; text: string }[];
+  question_id: string;
+  question: string;
+  answers: Array<QuestionAnswer>;
+}
+
+export interface QuestionResponse {
+  date: string;
+  data: Question[];
 }
