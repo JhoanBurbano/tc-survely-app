@@ -1,12 +1,13 @@
 {
   "expo": {
-    "name": "teamcore-survey-app",
-    "slug": "teamcore-survey-app",
+    "name": "Survely",
+    "slug": "teamcore-survely-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "scheme": "survely",
+    "jsEngine": "hermes",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "cover",
@@ -24,7 +25,8 @@
         "backgroundColor": "#003670",
         "resizeMode": "contain"
       },
-      "package": "com.survely.app"
+      "package": "com.survely.app",
+      "jsEngine": "hermes"
     },
     "web": {
       "favicon": "./assets/favicon.png"

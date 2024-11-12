@@ -44,7 +44,7 @@ if (getRNMinorVersion() >= 75) {
   }
 }
 
-rootProject.name = 'teamcore-survey-app'
+rootProject.name = 'Survely'
 
 dependencyResolutionManagement {
   versionCatalogs {

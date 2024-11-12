@@ -41,3 +41,7 @@ yarn-error.*
 # lockfiles
 package-lock.json
 yarn.lock
+
+# tests
+coverage/
+artifacts/
