@@ -1,0 +1,10 @@
+appId: com.survely.app
+---
+- launchApp
+- tapOn: "Let's start"
+- tapOn: 'A'
+- tapOn: 'B'
+- tapOn: 'C'
+- tapOn: 'Finalizado'
+- tapOn: 'Si'
+- closeApp
